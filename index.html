@@ -1,0 +1,100 @@
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>แบบฟอร์มมินิมอล</title>
+  <style>
+    body {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      background-color: #f5f5f5;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 50px 0;
+    }
+
+    .form-container {
+      background-color: #ffffff;
+      border-radius: 8px;
+      width: 360px;
+      padding: 30px;
+      box-sizing: border-box;
+    }
+
+    h2 {
+      text-align: center;
+      color: #111111;
+      font-weight: 400;
+      margin-bottom: 25px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      color: #333333;
+      font-size: 14px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea,
+    select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      font-size: 14px;
+      margin-bottom: 15px;
+      box-sizing: border-box;
+      background-color: #fafafa;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 80px;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: #111111;
+      color: #ffffff;
+      border: none;
+      border-radius: 5px;
+      font-size: 15px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background-color: #333333;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+    <h2>แบบฟอร์มมินิมอล</h2>
+    <form>
+      <label for="name">ชื่อ-นามสกุล</label>
+      <input type="text" id="name" name="name" placeholder="กรอกชื่อของคุณ">
+
+      <label for="email">อีเมล</label>
+      <input type="email" id="email" name="email" placeholder="example@email.com">
+
+      <label for="feedback">ความคิดเห็น</label>
+      <textarea id="feedback" name="feedback" placeholder="เขียนความคิดเห็นของคุณ"></textarea>
+
+      <label for="options">เลือกตัวเลือก</label>
+      <select id="options" name="options">
+        <option value="">-- กรุณาเลือก --</option>
+        <option value="option1">ตัวเลือก 1</option>
+        <option value="option2">ตัวเลือก 2</option>
+        <option value="option3">ตัวเลือก 3</option>
+      </select>
+
+      <button type="submit">ส่ง</button>
+    </form>
+  </div>
+
+</body>
+</html>
